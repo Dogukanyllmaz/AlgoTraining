@@ -1,4 +1,4 @@
-package org.example.question;
+package org.example.stringsQuestion;
 // Encryptor
 public class Question1 {
 

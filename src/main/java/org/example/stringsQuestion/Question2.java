@@ -1,4 +1,4 @@
-package org.example.question;
+package org.example.stringsQuestion;
 //Pangrams
 public class Question2 {
 
