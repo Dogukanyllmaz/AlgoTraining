@@ -7,8 +7,14 @@ public class Main {
     public static void main(String[] args) {
 
 
+        /*int[] test = new int[10];
+        System.out.println(test[1]);*/
+        /*String[] test1 = new String[10];
+        System.out.println(test1[1]);*/
+
+
         /*if (checkVaccinePCR()==true){
-            System.out.println("ucaa binebilirsiniz");
+            System.out.println("ucaga binebilirsiniz");
         }
         else {
             System.out.println("ucaga binemezsiniz");
@@ -60,14 +66,14 @@ public class Main {
             System.out.print("[" + hi.charAt(i) + "]");
         }*/
 
-        int counter = 1;
+        /*int counter = 1;
         for (int i = 0; i<3; i++){
             for (int j = 0; j < 3; j++) {
                 System.out.print(counter + " ");
                 counter++;
             }
             System.out.println();
-        }
+        }*/
 
 
 
