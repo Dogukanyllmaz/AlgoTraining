@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * Youtube folksdev java bootcamp #13 Random sınıfı
+ * Youtube folksdev java bootcamp #18 Random sınıfı
  *
  * @author H. Doğukan Yılmaz
  */
