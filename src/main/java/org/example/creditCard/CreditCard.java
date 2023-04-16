@@ -77,14 +77,35 @@ public class CreditCard {
         return true;
     }
 
+    /*R-1.11
+        Modify the CreditCard class from Code Fragment 1.5 to include a method that
+        updates the credit limit.
+     */
+    public boolean updateCreditLimit(int newLimit){
+        if (newLimit < 0)
+            return false;
+        limit = newLimit;
+        return true;
+    }
+
     /**
      * Processes customer payment that reduces balance.
      * @param amount the amount of payment made.
      */
 
+    /*R-1.12
+        Modify the CreditCard class from Code Fragment 1.5 so that it ignores any request to process a negative
+        payment amount
+     */
     public void makePayment(double amount){  //make payment
-        if (amount<balance)
-            balance -= amount;
+        if (amount < 0){
+            System.out.println("ignores");
+        }
+        else{
+            if (amount<balance)
+                balance -= amount;
+        }
+
     }
 
     //print a card's information
@@ -119,6 +140,9 @@ public class CreditCard {
                 System.out.println("New balance: " + creditCard.getBalance());
             }
         }
+
+        wallet[0].updateCreditLimit(7000);
+        System.out.println(wallet[0].getLimit());
 
 
     }

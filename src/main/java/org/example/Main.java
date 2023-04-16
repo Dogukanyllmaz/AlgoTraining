@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
 
+
         /*int[] test = new int[10];
         System.out.println(test[1]);*/
         /*String[] test1 = new String[10];
