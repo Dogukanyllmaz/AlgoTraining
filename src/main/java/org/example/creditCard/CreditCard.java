@@ -1,17 +1,35 @@
 package org.example.creditCard;
 
+/**
+ * A simple model for a consumer credit card.
+ * @author H. Doğukan Yılmaz
+ */
+
 public class CreditCard {
+
+
+
     //instance variables
-    private String customer;        // customer name "Dogukan Yilmaz"
-    private String bankName;        //bank name  "American Swing"
-    private String customerId;      // customer id like (5453 0000 8400 0037)
-    private int limit;              //credit limit (measured in dollars)
-    private double balance;         // current balance (measured in dollars)
+    private String customer;
+    private String bankName;
+    private String customerId;
+    private int limit;
+    private double balance;
 
 
     //Constructors
     public CreditCard(){
     }
+
+    /**
+     * Constructs a new credit card instance
+     * @param customer the name of the customer (e.g.,"Dogukan Yilmaz")
+     * @param bankName  the name of the bank (e.g.,"American Swing")
+     * @param customerId the account identifier (e.g.,"5453 0000 8400 0037")
+     * @param limit the credit limit (measured in dollars)
+     * @param balance the initial balance (measured in dollars)
+     */
+
     public CreditCard(String customer, String bankName, String customerId, int limit, double balance){
         this.customer = customer;
         this.bankName = bankName;
@@ -46,12 +64,23 @@ public class CreditCard {
     }
 
     //methods
-    public boolean charge(double price){   // make a charge(ucret almak)
+
+    /**
+     * Charges the given price to the card, assuming sufficient credit limit.
+     * @param price the amount to be charged.
+     * @return true if charge was accepted; false if charge was denied.
+     */
+    public boolean charge(double price){
         if (price + balance > limit)
             return false;
         balance +=price;
         return true;
     }
+
+    /**
+     * Processes customer payment that reduces balance.
+     * @param amount the amount of payment made.
+     */
 
     public void makePayment(double amount){  //make payment
         if (amount<balance)
