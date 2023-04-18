@@ -14,10 +14,11 @@ public class Product {
 
     // staticlerın initialize edildiği alan
     static {
+
         CATEGORY_ID = 12;
+
     }
     //final ile tanimlanan degiskenlerin setteri olmaz
-
 
     // fınal keywordunu kullandığımızda default constructor yerine smart constructor kullanılmalı
     // smart constructor
@@ -26,10 +27,7 @@ public class Product {
     }
 
     public static void main(String[] args) {
-
         final Product product = new Product(9);
-
-
     }
 
 }
