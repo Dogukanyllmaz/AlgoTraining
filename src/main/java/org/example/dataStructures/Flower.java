@@ -40,28 +40,24 @@ public class Flower {
     public String getName() {
         return name;
     }
-
     public int getPetals() {
         return petals;
     }
-
     public float getPrice() {
         return price;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public void setPetals(int petals) {
         this.petals = petals;
     }
-
     public void setPrice(float price) {
         this.price = price;
     }
-    //methods
 
+
+    //methods
     public static void printFlowers(Flower flower){ //prints flower information
         System.out.println("Flower Information");
         System.out.println("------------------");
@@ -70,7 +66,6 @@ public class Flower {
         System.out.println("Price: "+ flower.price); //implicit casting
         System.out.println("------------------");
     }
-
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
