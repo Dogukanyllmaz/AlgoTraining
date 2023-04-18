@@ -5,18 +5,14 @@ package org.example.finalKeyword;
  * @author H. Doğukan Yılmaz
  */
 public class Product {
-
     // instance variables
     private int product_id;
-
     // code conventions -> static final full uppercase
     private static final int CATEGORY_ID; // declare edildigi satirda initialize edilmeli ya da static icinde edilmeli.
 
     // staticlerın initialize edildiği alan
     static {
-
         CATEGORY_ID = 12;
-
     }
     //final ile tanimlanan degiskenlerin setteri olmaz
 
@@ -27,7 +23,9 @@ public class Product {
     }
 
     public static void main(String[] args) {
+
         final Product product = new Product(9);
+
     }
 
 }
