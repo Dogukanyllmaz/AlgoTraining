@@ -1,5 +1,9 @@
-package org.example.patika.java101;
-
+package org.example.patika.java101.dataStructuresAndAlgo.sort;
+/**
+ *Patika java101 DataStructures
+ *
+ * @author H. Dogukan Yilmaz
+ */
 public class MergeSortProject {
 
     //print array

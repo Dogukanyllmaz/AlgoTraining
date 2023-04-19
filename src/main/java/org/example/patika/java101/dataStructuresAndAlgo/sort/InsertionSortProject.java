@@ -1,8 +1,10 @@
-package org.example.patika.java101;
-
+package org.example.patika.java101.dataStructuresAndAlgo.sort;
+/**
+ *Patika java101 DataStructures
+ *
+ * @author H. Dogukan Yilmaz
+ */
 public class InsertionSortProject {
-
-
 
     public static void main(String[] args) {
         //{22,27,16,2,18,6};
@@ -35,7 +37,7 @@ public class InsertionSortProject {
 
         //time complexity = O(n^2)
         //insertion sort
-        for (int i = 1; i < arr.length; ++i) {
+        for (int i = 1; i < arr.length; i++) {
             int key = arr[i];
             int j = i-1;
             while (j>=0 && arr[j]>key){
