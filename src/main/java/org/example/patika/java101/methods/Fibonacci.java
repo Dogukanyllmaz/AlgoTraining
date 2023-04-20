@@ -6,6 +6,12 @@ package org.example.patika.java101.methods;
  * @author H. Doğukan Yılmaz
  */
 public class Fibonacci {
+    public static int fib(int n){
+        if(n == 1 || n == 2){
+            return 1;
+        }
+        return fib(n-1)+fib(n-2);
+    }
     public static void main(String[] args) {
 
         /*  1 1 2 3 5 8 ...
@@ -19,9 +25,11 @@ public class Fibonacci {
                .
                .    */
 
+        //Recursive fibonacci series
 
-
+        System.out.println(fib(6));
 
 
     }
+
 }
