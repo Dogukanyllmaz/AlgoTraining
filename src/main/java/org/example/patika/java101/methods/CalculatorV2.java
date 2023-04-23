@@ -77,7 +77,6 @@ public class CalculatorV2 {
         int result = 0;
 
         for (int i = 1; i <= counter; i++) {
-
             System.out.print(i + ". number: ");
             number=sc.nextInt();
             if (i == 1){
